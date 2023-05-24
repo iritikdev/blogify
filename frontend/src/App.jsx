@@ -1,17 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Box } from "@chakra-ui/react";
+import BlogCard from "./components/BlogCard";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <p className="read-the-docs text-xl font-sans text-violet-400">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Box m={5}>
+      <BlogCard />
+    </Box>
   );
 }
 
