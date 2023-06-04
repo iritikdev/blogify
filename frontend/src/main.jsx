@@ -5,6 +5,7 @@ import "@fontsource/roboto";
 import "@fontsource-variable/open-sans";
 
 import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 const colors = {
   blue: {
@@ -19,14 +20,16 @@ const colors = {
 
 const fonts = {
   body: "Open Sans Variable",
-  heading: "Roboto",
+  heading: "Open Sans Variable",
 };
 const theme = extendTheme({ colors, fonts });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
