@@ -48,7 +48,7 @@ export const Header = () => {
           sm: 4,
         }}
         py={4}
-        shadow="md"
+        // shadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>

@@ -66,10 +66,14 @@ const Hero = () => {
         </FormControl>
         <HStack
           alignSelf={{
-            base: "center",
+            base: "flex-start",
             sm: "center",
             md: "center",
             lg: "flex-start",
+          }}
+          display={{
+            base: "block",
+            sm: "flex",
           }}
           flexWrap={"wrap"}
           alignItems={"flex-start"}
